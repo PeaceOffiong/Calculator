@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    flex-direction: column;
+  margin: 50px;
+  overflow: hidden;
+}
+
+header{
+  text-align: center;
+}
+
+h4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+h4{
+    background-color: white;
+    color: #c58e7f;
+}
+
+div{
+    background-color: #dfa375;
+    color: white;
+    border: 2px solid white;
+    font-size: 25px;
+}
+
+section{
+    width: 430px;
+    height: 530px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: #ddb6ab 2px solid;
+    border-top: none;
+    transition: 2s;
+  flex-direction: column;
+}
+
+.container{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.input{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 15px;
+}
+
+.span-two{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.cell{
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cell.brown, .span-two{
+    background-color: #c58e7f;
+}
+
+.grey{
+    background-color: #ddb6ab;
+}
+
+.a3{
+  border-left: 2px solid white;
+}
+
+@media  ( max-width: 500px){
+    section{
+        width: 350px;
+    }
+    h4{
+        padding-left: 20px;
+    }
+    .a2{
+        padding-left: 20px;
+    }
+}
+
+.result{
+  font-size: 16px;
+  height: 30%;
+  display: flex;
+  align-item: center;
+  justify-content:flex-end;
+  padding: 10px;
+}
+
+.text{
+  padding: 10px;
+  font-size: 28px;
+  height: 60%;
+  display: flex;
+  align-item: center;
+  justify-content:flex-end;
+}
+
+  input{
+    overflow: hidden;
+  }
